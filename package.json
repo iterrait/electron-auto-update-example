@@ -1,0 +1,23 @@
+{
+  "name": "electron-auto-update-example",
+  "version": "1.0.0",
+  "description": "electron-auto-update-example",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder build --mac --win --publish never",
+    "deploy": "electron-builder build --mac --win --publish always"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/iterrait/electron-auto-update-example.git"
+  },
+  "author": "GitHub",
+  "devDependencies": {
+    "electron": "^25.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "dependencies": {
+    "electron-updater": "^5.3.0"
+  }
+}
