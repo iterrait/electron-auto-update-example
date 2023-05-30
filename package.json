@@ -1,8 +1,22 @@
 {
   "name": "electron-auto-update-example",
   "version": "1.0.0",
-  "description": "electron-auto-update-example",
   "main": "main.js",
+  "author": {
+    "name": "iTerra",
+    "email": "office@iterra.world"
+  },
+  "description": "Player",
+  "homepage": "https://iterra.world",
+  "build": {
+    "appId": "iterra",
+    "asar": false,
+    "publish": [{
+      "provider": "github",
+      "owner": "iterrait",
+      "repo": "electron-auto-update-example"
+    }]
+  },
   "scripts": {
     "start": "electron .",
     "build": "electron-builder build --win --publish never",
@@ -12,7 +26,6 @@
     "type" : "git",
     "url" : "https://github.com/iterrait/electron-auto-update-example.git"
   },
-  "author": "GitHub",
   "devDependencies": {
     "electron": "^25.0.0",
     "electron-builder": "^23.6.0"

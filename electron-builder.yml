@@ -1,4 +1,4 @@
-appId: com.example.ElectronAutoUpdate
+appId: iterra
 publish:
   provider: github
-  token: [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]
+  token: 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
